@@ -1,0 +1,16 @@
+[
+  {
+    "id": "70000000-0000-4000-8000-000000000001",
+    "admission_id": "50000000-0000-4000-8000-000000000004",
+    "field": "admission_date",
+    "old_value": "2026-08-28",
+    "new_value": "2026-08-08",
+    "reason": "Date keyed from fee receipt instead of allotment letter.",
+    "status": "pending",
+    "requested_by": "demo-institution_operator",
+    "decided_by": null,
+    "decision_note": null,
+    "created_at": "2026-09-03T11:00:00Z",
+    "decided_at": null
+  }
+]

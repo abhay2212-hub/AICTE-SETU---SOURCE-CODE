@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "programme_code": {
+      "title": "Programme Code",
+      "type": "string"
+    },
+    "approved_total": {
+      "title": "Approved Total",
+      "type": "integer"
+    },
+    "admitted_total": {
+      "title": "Admitted Total",
+      "type": "integer"
+    },
+    "overrun": {
+      "title": "Overrun",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "programme_code",
+    "approved_total",
+    "admitted_total",
+    "overrun"
+  ],
+  "title": "AccreditationProgramme",
+  "type": "object"
+}

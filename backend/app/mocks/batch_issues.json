@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 3,
+    "rule_code": "APAAR_MISSING",
+    "severity": "error",
+    "message": "apaar_id is blank and the student has not opted out.",
+    "details": {},
+    "resolved": false
+  },
+  {
+    "id": 2,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 7,
+    "rule_code": "APAAR_FORMAT",
+    "severity": "error",
+    "message": "apaar_id must be exactly 12 digits.",
+    "details": {
+      "length": 11
+    },
+    "resolved": false
+  },
+  {
+    "id": 3,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 12,
+    "rule_code": "APAAR_OPTED_OUT",
+    "severity": "info",
+    "message": "Student opted out of APAAR; provisional ID used.",
+    "details": {
+      "provisional_id": "PROV-1-9999003-0007"
+    },
+    "resolved": false
+  },
+  {
+    "id": 4,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 18,
+    "rule_code": "DUP_IN_BATCH",
+    "severity": "error",
+    "message": "APAAR ID repeats row 4 of this batch.",
+    "details": {
+      "duplicate_of_row": 4,
+      "apaar_id_masked": "XXXX-XXXX-0005"
+    },
+    "resolved": false
+  },
+  {
+    "id": 5,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 21,
+    "rule_code": "DUP_CROSS_INSTITUTION",
+    "severity": "review",
+    "message": "APAAR ID already enrolled at another institution for 2026-27.",
+    "details": {
+      "other_institution_code": "1-9999002",
+      "apaar_id_masked": "XXXX-XXXX-0003"
+    },
+    "resolved": false
+  },
+  {
+    "id": 6,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 26,
+    "rule_code": "FUZZY_MATCH_CANDIDATE",
+    "severity": "review",
+    "message": "Blind Match found a likely duplicate identity.",
+    "details": {
+      "blind_match_case_id": "80000000-0000-4000-8000-000000000001",
+      "dice": 0.93
+    },
+    "resolved": false
+  },
+  {
+    "id": 7,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 33,
+    "rule_code": "BACKDATED_ENTRY",
+    "severity": "review",
+    "message": "Admission date is 79 days before upload and outside the admission window.",
+    "details": {
+      "admission_date": "2026-06-15",
+      "uploaded_at": "2026-09-02"
+    },
+    "resolved": false
+  },
+  {
+    "id": 8,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 40,
+    "rule_code": "SHARED_CONTACT_CLUSTER",
+    "severity": "review",
+    "message": "Contact hash shared by 9 students.",
+    "details": {
+      "cluster_size": 9
+    },
+    "resolved": false
+  },
+  {
+    "id": 9,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 52,
+    "rule_code": "QUALIFYING_BELOW_NORM",
+    "severity": "warning",
+    "message": "Qualifying percentage below the AICTE minimum.",
+    "details": {
+      "pct": 41.0,
+      "minimum": 45.0
+    },
+    "resolved": false
+  },
+  {
+    "id": 10,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 61,
+    "rule_code": "DATE_INVALID",
+    "severity": "error",
+    "message": "dob is not a valid date.",
+    "details": {
+      "field": "dob",
+      "value": "2008-02-30"
+    },
+    "resolved": false
+  },
+  {
+    "id": 11,
+    "batch_id": "30000000-0000-4000-8000-000000000001",
+    "row_number": 72,
+    "rule_code": "INTAKE_OVERRUN",
+    "severity": "review",
+    "message": "Committing this row exceeds approved seats in the regular pool.",
+    "details": {
+      "programme_code": "UG-CSE",
+      "pool": "regular",
+      "approved_seats": 51,
+      "admitted_after_commit": 62
+    },
+    "resolved": false
+  }
+]

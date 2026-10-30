@@ -1,0 +1,272 @@
+{
+  "10000000-0000-4000-8000-000000000001": {
+    "institution_id": "10000000-0000-4000-8000-000000000001",
+    "academic_year": "2026-27",
+    "programmes": [
+      {
+        "programme_id": "20000000-0000-4000-8000-000000000011",
+        "programme_code": "UG-CSE",
+        "programme_name": "B.Tech Computer Science and Engineering",
+        "approved_total": 120,
+        "admitted_total": 118,
+        "overrun": 0,
+        "pools": [
+          {
+            "pool": "regular",
+            "approved_seats": 102,
+            "admitted": 102,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "tfw",
+            "approved_seats": 6,
+            "admitted": 6,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "fn_oci_pio",
+            "approved_seats": 6,
+            "admitted": 4,
+            "available": 2,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "nri",
+            "approved_seats": 6,
+            "admitted": 6,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          }
+        ]
+      },
+      {
+        "programme_id": "20000000-0000-4000-8000-000000000012",
+        "programme_code": "UG-ME",
+        "programme_name": "B.Tech Mechanical Engineering",
+        "approved_total": 60,
+        "admitted_total": 57,
+        "overrun": 0,
+        "pools": [
+          {
+            "pool": "regular",
+            "approved_seats": 51,
+            "admitted": 51,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "tfw",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "fn_oci_pio",
+            "approved_seats": 3,
+            "admitted": 0,
+            "available": 3,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "nri",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          }
+        ]
+      }
+    ]
+  },
+  "10000000-0000-4000-8000-000000000002": {
+    "institution_id": "10000000-0000-4000-8000-000000000002",
+    "academic_year": "2026-27",
+    "programmes": [
+      {
+        "programme_id": "20000000-0000-4000-8000-000000000021",
+        "programme_code": "UG-CSE",
+        "programme_name": "B.Tech Computer Science and Engineering",
+        "approved_total": 120,
+        "admitted_total": 120,
+        "overrun": 0,
+        "pools": [
+          {
+            "pool": "regular",
+            "approved_seats": 102,
+            "admitted": 102,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "tfw",
+            "approved_seats": 6,
+            "admitted": 6,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "fn_oci_pio",
+            "approved_seats": 6,
+            "admitted": 6,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "nri",
+            "approved_seats": 6,
+            "admitted": 6,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          }
+        ]
+      },
+      {
+        "programme_id": "20000000-0000-4000-8000-000000000022",
+        "programme_code": "UG-ECE",
+        "programme_name": "B.Tech Electronics and Communication Engineering",
+        "approved_total": 60,
+        "admitted_total": 52,
+        "overrun": 0,
+        "pools": [
+          {
+            "pool": "regular",
+            "approved_seats": 51,
+            "admitted": 46,
+            "available": 5,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "tfw",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "fn_oci_pio",
+            "approved_seats": 3,
+            "admitted": 0,
+            "available": 3,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "nri",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          }
+        ]
+      }
+    ]
+  },
+  "10000000-0000-4000-8000-000000000003": {
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "academic_year": "2026-27",
+    "programmes": [
+      {
+        "programme_id": "20000000-0000-4000-8000-000000000031",
+        "programme_code": "UG-CSE",
+        "programme_name": "B.Tech Computer Science and Engineering",
+        "approved_total": 60,
+        "admitted_total": 71,
+        "overrun": 11,
+        "pools": [
+          {
+            "pool": "regular",
+            "approved_seats": 51,
+            "admitted": 62,
+            "available": 0,
+            "overrun": 11,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "tfw",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "fn_oci_pio",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "nri",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          }
+        ]
+      },
+      {
+        "programme_id": "20000000-0000-4000-8000-000000000032",
+        "programme_code": "UG-CE",
+        "programme_name": "B.Tech Civil Engineering",
+        "approved_total": 60,
+        "admitted_total": 44,
+        "overrun": 0,
+        "pools": [
+          {
+            "pool": "regular",
+            "approved_seats": 51,
+            "admitted": 38,
+            "available": 13,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "tfw",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "fn_oci_pio",
+            "approved_seats": 3,
+            "admitted": 0,
+            "available": 3,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          },
+          {
+            "pool": "nri",
+            "approved_seats": 3,
+            "admitted": 3,
+            "available": 0,
+            "overrun": 0,
+            "rule_version": "APH-2026-27-v1"
+          }
+        ]
+      }
+    ]
+  }
+}

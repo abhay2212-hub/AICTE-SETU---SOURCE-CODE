@@ -1,0 +1,74 @@
+[
+  {
+    "id": "10000000-0000-4000-8000-000000000001",
+    "aicte_code": "1-9999001",
+    "name": "Meghdoot Institute of Engineering",
+    "state": "Maharashtra",
+    "parent_trust": "Meghdoot Shikshan Sanstha",
+    "integrity_score": 93.0,
+    "programmes": [
+      {
+        "id": "20000000-0000-4000-8000-000000000011",
+        "code": "UG-CSE",
+        "name": "B.Tech Computer Science and Engineering",
+        "level": "UG",
+        "duration_years": 4
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000012",
+        "code": "UG-ME",
+        "name": "B.Tech Mechanical Engineering",
+        "level": "UG",
+        "duration_years": 4
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000002",
+    "aicte_code": "1-9999002",
+    "name": "Narmada Valley College of Technology",
+    "state": "Madhya Pradesh",
+    "parent_trust": "Narmada Vidya Trust",
+    "integrity_score": 84.0,
+    "programmes": [
+      {
+        "id": "20000000-0000-4000-8000-000000000021",
+        "code": "UG-CSE",
+        "name": "B.Tech Computer Science and Engineering",
+        "level": "UG",
+        "duration_years": 4
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000022",
+        "code": "UG-ECE",
+        "name": "B.Tech Electronics and Communication Engineering",
+        "level": "UG",
+        "duration_years": 4
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-4000-8000-000000000003",
+    "aicte_code": "1-9999003",
+    "name": "Shadow Institute of Technology",
+    "state": "Uttar Pradesh",
+    "parent_trust": "Shadow Educational Trust",
+    "integrity_score": 38.0,
+    "programmes": [
+      {
+        "id": "20000000-0000-4000-8000-000000000031",
+        "code": "UG-CSE",
+        "name": "B.Tech Computer Science and Engineering",
+        "level": "UG",
+        "duration_years": 4
+      },
+      {
+        "id": "20000000-0000-4000-8000-000000000032",
+        "code": "UG-CE",
+        "name": "B.Tech Civil Engineering",
+        "level": "UG",
+        "duration_years": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,180 @@
+{
+  "description": "record_* are student ids. For institution users the other institution's side reads\n'hidden' (record and institution id) with no name.",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "record_a": {
+      "title": "Record A",
+      "type": "string"
+    },
+    "record_b": {
+      "title": "Record B",
+      "type": "string"
+    },
+    "institution_a_id": {
+      "title": "Institution A Id",
+      "type": "string"
+    },
+    "institution_b_id": {
+      "title": "Institution B Id",
+      "type": "string"
+    },
+    "dice": {
+      "title": "Dice",
+      "type": "number"
+    },
+    "fields_compared": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Fields Compared",
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "open",
+        "confirmed",
+        "dismissed",
+        "correction_requested"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "review_case_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Review Case Id"
+    },
+    "institution_a_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Institution A Name"
+    },
+    "institution_b_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Institution B Name"
+    },
+    "programme_a": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Programme A"
+    },
+    "programme_b": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Programme B"
+    },
+    "academic_year_a": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Academic Year A"
+    },
+    "academic_year_b": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Academic Year B"
+    },
+    "identity_hint_a": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Initials and birth year; aicte_admin and auditor only",
+      "title": "Identity Hint A"
+    },
+    "identity_hint_b": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Identity Hint B"
+    },
+    "created_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Created At"
+    }
+  },
+  "required": [
+    "id",
+    "record_a",
+    "record_b",
+    "institution_a_id",
+    "institution_b_id",
+    "dice",
+    "fields_compared",
+    "status"
+  ],
+  "title": "BlindMatchCase",
+  "type": "object"
+}

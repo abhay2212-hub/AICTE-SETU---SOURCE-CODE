@@ -1,0 +1,110 @@
+{
+  "10000000-0000-4000-8000-000000000003": {
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "integrity_score": 38.0,
+    "components": {
+      "intake_overrun": -22.0,
+      "shared_contact_cluster": -14.0,
+      "backdating": -10.0,
+      "blind_match": -6.0,
+      "anomaly": -10.0
+    },
+    "signals": [
+      {
+        "code": "INTAKE_OVERRUN",
+        "severity": "review",
+        "evidence": {
+          "programme_code": "UG-CSE",
+          "approved_total": 60,
+          "admitted_total": 71
+        }
+      },
+      {
+        "code": "SHARED_CONTACT_CLUSTER",
+        "severity": "review",
+        "evidence": {
+          "cluster_size": 9
+        }
+      },
+      {
+        "code": "BACKDATED_ENTRY",
+        "severity": "review",
+        "evidence": {
+          "rows": 6
+        }
+      },
+      {
+        "code": "FUZZY_MATCH_CANDIDATE",
+        "severity": "review",
+        "evidence": {
+          "blind_match_case_id": "80000000-0000-4000-8000-000000000001"
+        }
+      }
+    ],
+    "anomaly": {
+      "score": 0.81,
+      "top_features": [
+        {
+          "name": "management_quota_share",
+          "value": 0.42,
+          "peer_median": 0.12
+        },
+        {
+          "name": "late_admission_share",
+          "value": 0.31,
+          "peer_median": 0.05
+        },
+        {
+          "name": "fill_ratio",
+          "value": 1.18,
+          "peer_median": 0.96
+        }
+      ]
+    }
+  },
+  "10000000-0000-4000-8000-000000000002": {
+    "institution_id": "10000000-0000-4000-8000-000000000002",
+    "integrity_score": 84.0,
+    "components": {
+      "blind_match": -6.0,
+      "anomaly": -10.0
+    },
+    "signals": [
+      {
+        "code": "FUZZY_MATCH_CANDIDATE",
+        "severity": "review",
+        "evidence": {
+          "blind_match_case_id": "80000000-0000-4000-8000-000000000001"
+        }
+      }
+    ],
+    "anomaly": {
+      "score": 0.34,
+      "top_features": [
+        {
+          "name": "fill_ratio",
+          "value": 0.95,
+          "peer_median": 0.96
+        }
+      ]
+    }
+  },
+  "10000000-0000-4000-8000-000000000001": {
+    "institution_id": "10000000-0000-4000-8000-000000000001",
+    "integrity_score": 93.0,
+    "components": {
+      "anomaly": -7.0
+    },
+    "signals": [],
+    "anomaly": {
+      "score": 0.21,
+      "top_features": [
+        {
+          "name": "opt_out_share",
+          "value": 0.02,
+          "peer_median": 0.02
+        }
+      ]
+    }
+  }
+}

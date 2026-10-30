@@ -1,0 +1,16 @@
+{
+  "properties": {
+    "fields": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Fields",
+      "type": "object"
+    }
+  },
+  "required": [
+    "fields"
+  ],
+  "title": "EncodeRequest",
+  "type": "object"
+}

@@ -1,0 +1,68 @@
+{
+  "10000000-0000-4000-8000-000000000001": {
+    "institution_id": "10000000-0000-4000-8000-000000000001",
+    "institution_name": "Meghdoot Institute of Engineering",
+    "academic_year": "2026-27",
+    "integrity_score": 93.0,
+    "apaar_coverage_pct": 98.6,
+    "open_review_cases": 0,
+    "programmes": [
+      {
+        "programme_code": "UG-CSE",
+        "approved_total": 120,
+        "admitted_total": 118,
+        "overrun": 0
+      },
+      {
+        "programme_code": "UG-ME",
+        "approved_total": 60,
+        "admitted_total": 57,
+        "overrun": 0
+      }
+    ]
+  },
+  "10000000-0000-4000-8000-000000000002": {
+    "institution_id": "10000000-0000-4000-8000-000000000002",
+    "institution_name": "Narmada Valley College of Technology",
+    "academic_year": "2026-27",
+    "integrity_score": 84.0,
+    "apaar_coverage_pct": 97.9,
+    "open_review_cases": 0,
+    "programmes": [
+      {
+        "programme_code": "UG-CSE",
+        "approved_total": 120,
+        "admitted_total": 120,
+        "overrun": 0
+      },
+      {
+        "programme_code": "UG-ECE",
+        "approved_total": 60,
+        "admitted_total": 52,
+        "overrun": 0
+      }
+    ]
+  },
+  "10000000-0000-4000-8000-000000000003": {
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "institution_name": "Shadow Institute of Technology",
+    "academic_year": "2026-27",
+    "integrity_score": 38.0,
+    "apaar_coverage_pct": 91.2,
+    "open_review_cases": 4,
+    "programmes": [
+      {
+        "programme_code": "UG-CSE",
+        "approved_total": 60,
+        "admitted_total": 71,
+        "overrun": 11
+      },
+      {
+        "programme_code": "UG-CE",
+        "approved_total": 60,
+        "admitted_total": 44,
+        "overrun": 0
+      }
+    ]
+  }
+}

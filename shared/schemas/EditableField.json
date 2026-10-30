@@ -1,0 +1,40 @@
+{
+  "properties": {
+    "field": {
+      "title": "Field",
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "date",
+        "enum",
+        "number",
+        "text"
+      ],
+      "title": "Type",
+      "type": "string"
+    },
+    "allowed_values": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The only values accepted as new_value; set for enum fields",
+      "title": "Allowed Values"
+    }
+  },
+  "required": [
+    "field",
+    "type"
+  ],
+  "title": "EditableField",
+  "type": "object"
+}

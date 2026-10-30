@@ -1,0 +1,20 @@
+{
+  "properties": {
+    "url": {
+      "anyOf": [
+        {
+          "pattern": "^https?://\\S+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Receives batch.committed; null removes the webhook",
+      "title": "Url"
+    }
+  },
+  "title": "WebhookConfigRequest",
+  "type": "object"
+}

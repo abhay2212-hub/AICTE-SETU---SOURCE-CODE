@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "rows_total": {
+      "default": 0,
+      "title": "Rows Total",
+      "type": "integer"
+    },
+    "errors": {
+      "default": 0,
+      "title": "Errors",
+      "type": "integer"
+    },
+    "warnings": {
+      "default": 0,
+      "title": "Warnings",
+      "type": "integer"
+    },
+    "review": {
+      "default": 0,
+      "title": "Review",
+      "type": "integer"
+    },
+    "info": {
+      "default": 0,
+      "title": "Info",
+      "type": "integer"
+    }
+  },
+  "title": "BatchCounts",
+  "type": "object"
+}

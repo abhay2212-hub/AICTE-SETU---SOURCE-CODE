@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "academic_year": {
+      "title": "Academic Year",
+      "type": "string"
+    },
+    "opens_at": {
+      "format": "date-time",
+      "title": "Opens At",
+      "type": "string"
+    },
+    "closes_at": {
+      "format": "date-time",
+      "title": "Closes At",
+      "type": "string"
+    },
+    "locked_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Locked At"
+    },
+    "state": {
+      "description": "not_open before opens_at, open until closes_at, then closed; locked once an aicte_admin locks it",
+      "enum": [
+        "not_open",
+        "open",
+        "closed",
+        "locked"
+      ],
+      "title": "State",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "format": "date-time",
+      "title": "Updated At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "academic_year",
+    "opens_at",
+    "closes_at",
+    "state",
+    "created_at",
+    "updated_at"
+  ],
+  "title": "SubmissionWindow",
+  "type": "object"
+}

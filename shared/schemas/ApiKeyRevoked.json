@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "key_id": {
+      "title": "Key Id",
+      "type": "string"
+    },
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "revoked_at": {
+      "format": "date-time",
+      "title": "Revoked At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "key_id",
+    "institution_id",
+    "revoked_at"
+  ],
+  "title": "ApiKeyRevoked",
+  "type": "object"
+}

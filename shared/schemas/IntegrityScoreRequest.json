@@ -1,0 +1,170 @@
+{
+  "$defs": {
+    "MatchCase": {
+      "description": "Represents a potential duplicate between institutions.",
+      "properties": {
+        "case_id": {
+          "title": "Case Id",
+          "type": "string"
+        },
+        "institution_a": {
+          "title": "Institution A",
+          "type": "string"
+        },
+        "institution_b": {
+          "title": "Institution B",
+          "type": "string"
+        },
+        "student_a_id": {
+          "title": "Student A Id",
+          "type": "string"
+        },
+        "student_b_id": {
+          "title": "Student B Id",
+          "type": "string"
+        },
+        "similarity_score": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Similarity Score",
+          "type": "number"
+        },
+        "confidence": {
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "matched_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matched Fields",
+          "type": "array"
+        },
+        "status": {
+          "default": "open",
+          "enum": [
+            "open",
+            "confirmed",
+            "dismissed",
+            "correction_requested"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "institution_a",
+        "institution_b",
+        "student_a_id",
+        "student_b_id",
+        "similarity_score",
+        "confidence"
+      ],
+      "title": "MatchCase",
+      "type": "object"
+    },
+    "Signal": {
+      "description": "An integrity signal raised against an institution.",
+      "properties": {
+        "signal_id": {
+          "title": "Signal Id",
+          "type": "string"
+        },
+        "institution_id": {
+          "title": "Institution Id",
+          "type": "string"
+        },
+        "signal_name": {
+          "title": "Signal Name",
+          "type": "string"
+        },
+        "severity": {
+          "default": "warning",
+          "enum": [
+            "error",
+            "warning",
+            "review",
+            "info"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "score": {
+          "default": 0.0,
+          "title": "Score",
+          "type": "number"
+        },
+        "evidence": {
+          "additionalProperties": true,
+          "title": "Evidence",
+          "type": "object"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "institution_id",
+        "signal_name"
+      ],
+      "title": "Signal",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "description": "Request payload for POST /engine/integrity-score.",
+  "properties": {
+    "institution_id": {
+      "default": "unknown",
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "signals": {
+      "items": {
+        "$ref": "#/$defs/Signal"
+      },
+      "title": "Signals",
+      "type": "array"
+    },
+    "anomaly_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Anomaly Score"
+    },
+    "blind_matches": {
+      "items": {
+        "$ref": "#/$defs/MatchCase"
+      },
+      "title": "Blind Matches",
+      "type": "array"
+    },
+    "weights": {
+      "additionalProperties": true,
+      "title": "Weights",
+      "type": "object"
+    }
+  },
+  "title": "IntegrityScoreRequest",
+  "type": "object"
+}

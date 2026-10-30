@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "institutions": {
+      "title": "Institutions",
+      "type": "integer"
+    },
+    "active_admissions": {
+      "title": "Active Admissions",
+      "type": "integer"
+    },
+    "approved_seats": {
+      "title": "Approved Seats",
+      "type": "integer"
+    },
+    "overrun_programmes": {
+      "title": "Overrun Programmes",
+      "type": "integer"
+    },
+    "open_review_cases": {
+      "title": "Open Review Cases",
+      "type": "integer"
+    },
+    "states": {
+      "title": "States",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "institutions",
+    "active_admissions",
+    "approved_seats",
+    "overrun_programmes",
+    "open_review_cases",
+    "states"
+  ],
+  "title": "StateTotals",
+  "type": "object"
+}

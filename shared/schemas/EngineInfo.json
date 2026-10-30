@@ -1,0 +1,34 @@
+{
+  "description": "Engine metadata and runtime parameters.",
+  "properties": {
+    "name": {
+      "default": "Integrity Intelligence Engine",
+      "title": "Name",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "status": {
+      "default": "active",
+      "title": "Status",
+      "type": "string"
+    },
+    "match_threshold": {
+      "title": "Match Threshold",
+      "type": "number"
+    },
+    "model_version": {
+      "title": "Model Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "version",
+    "match_threshold",
+    "model_version"
+  ],
+  "title": "EngineInfo",
+  "type": "object"
+}

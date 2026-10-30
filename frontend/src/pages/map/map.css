@@ -1,0 +1,48 @@
+/* Owner: Dev B */
+/* State map motion: states fade in with a stagger; fills ease when the metric changes. */
+@media (prefers-reduced-motion: no-preference) {
+  .map-state {
+    animation: map-state-in 480ms ease-out both;
+  }
+  .overrun-pulse {
+    animation: overrun-pulse 1.8s ease-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .map-fill {
+    transition:
+      fill 450ms ease,
+      stroke 150ms ease;
+  }
+}
+
+/* Static under reduced motion: the ring stays hidden and only the solid dot shows. */
+.overrun-pulse {
+  opacity: 0;
+}
+
+@keyframes overrun-pulse {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(2.6);
+  }
+}
+
+@keyframes map-state-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.map-fill:focus-visible {
+  stroke: #4338ca;
+  stroke-width: 2.5;
+}

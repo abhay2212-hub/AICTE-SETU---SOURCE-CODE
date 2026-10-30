@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "apaar_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Apaar Id"
+    },
+    "opted_out": {
+      "default": false,
+      "title": "Opted Out",
+      "type": "boolean"
+    }
+  },
+  "title": "ApaarVerifyRequest",
+  "type": "object"
+}

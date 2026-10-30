@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "algorithm": {
+      "const": "Ed25519",
+      "default": "Ed25519",
+      "title": "Algorithm",
+      "type": "string"
+    },
+    "key_id": {
+      "title": "Key Id",
+      "type": "string"
+    },
+    "public_key_b64": {
+      "description": "Standard base64 of the raw 32-byte public key",
+      "title": "Public Key B64",
+      "type": "string"
+    }
+  },
+  "required": [
+    "key_id",
+    "public_key_b64"
+  ],
+  "title": "PublicKey",
+  "type": "object"
+}

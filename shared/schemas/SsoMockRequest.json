@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "role": {
+      "default": "institution_admin",
+      "enum": [
+        "institution_admin",
+        "institution_operator",
+        "aicte_admin",
+        "student",
+        "verifier",
+        "auditor"
+      ],
+      "title": "Role",
+      "type": "string"
+    },
+    "institution_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Institution Id"
+    },
+    "email": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Email"
+    }
+  },
+  "title": "SsoMockRequest",
+  "type": "object"
+}

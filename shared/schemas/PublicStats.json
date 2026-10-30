@@ -1,0 +1,39 @@
+{
+  "description": "Platform-wide aggregates for the landing page. Counts only, no names or IDs.",
+  "properties": {
+    "institutions": {
+      "title": "Institutions",
+      "type": "integer"
+    },
+    "active_admissions": {
+      "title": "Active Admissions",
+      "type": "integer"
+    },
+    "open_review_cases": {
+      "title": "Open Review Cases",
+      "type": "integer"
+    },
+    "audit_chain_ok": {
+      "title": "Audit Chain Ok",
+      "type": "boolean"
+    },
+    "audit_events": {
+      "title": "Audit Events",
+      "type": "integer"
+    },
+    "academic_year": {
+      "title": "Academic Year",
+      "type": "string"
+    }
+  },
+  "required": [
+    "institutions",
+    "active_admissions",
+    "open_review_cases",
+    "audit_chain_ok",
+    "audit_events",
+    "academic_year"
+  ],
+  "title": "PublicStats",
+  "type": "object"
+}

@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "reason": {
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "reason"
+  ],
+  "title": "WithdrawRequest",
+  "type": "object"
+}

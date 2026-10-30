@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "admission_id": {
+      "title": "Admission Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "submitted",
+        "student_confirmed",
+        "student_disputed",
+        "no_response",
+        "withdrawn"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "changed": {
+      "description": "False when the same response was already recorded",
+      "title": "Changed",
+      "type": "boolean"
+    },
+    "review_case_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The open dispute case for this admission, when there is one",
+      "title": "Review Case Id"
+    }
+  },
+  "required": [
+    "admission_id",
+    "status",
+    "changed"
+  ],
+  "title": "StudentResponseResult",
+  "type": "object"
+}

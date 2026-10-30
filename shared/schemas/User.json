@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "role": {
+      "enum": [
+        "institution_admin",
+        "institution_operator",
+        "aicte_admin",
+        "student",
+        "verifier",
+        "auditor"
+      ],
+      "title": "Role",
+      "type": "string"
+    },
+    "institution_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Institution Id"
+    },
+    "display_name": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Display Name"
+    },
+    "demo": {
+      "default": false,
+      "title": "Demo",
+      "type": "boolean"
+    },
+    "student_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Student Id"
+    }
+  },
+  "required": [
+    "id",
+    "role"
+  ],
+  "title": "User",
+  "type": "object"
+}

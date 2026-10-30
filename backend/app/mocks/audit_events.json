@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "actor": "demo-institution_admin",
+    "action": "batch.uploaded",
+    "entity_type": "batch",
+    "entity_id": "30000000-0000-4000-8000-000000000001",
+    "payload": {
+      "file_name": "shadow-admissions-2026-27.csv"
+    },
+    "created_at": "2026-09-02T10:01:00Z",
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "5e8e65a8d212648d4698f9461685bee506f8a90d7c08c9a306771f9e2b1186d1"
+  },
+  {
+    "id": 2,
+    "actor": "system",
+    "action": "batch.validated",
+    "entity_type": "batch",
+    "entity_id": "30000000-0000-4000-8000-000000000001",
+    "payload": {
+      "issues": 11
+    },
+    "created_at": "2026-09-03T10:02:00Z",
+    "prev_hash": "5e8e65a8d212648d4698f9461685bee506f8a90d7c08c9a306771f9e2b1186d1",
+    "hash": "fb7ddc1af139132bd34174392f34fb8c6b565dadf4eb4be9d73660a6f9b8ddff"
+  },
+  {
+    "id": 3,
+    "actor": "demo-institution_admin",
+    "action": "batch.committed",
+    "entity_type": "batch",
+    "entity_id": "30000000-0000-4000-8000-000000000001",
+    "payload": {
+      "rows_committed": 70
+    },
+    "created_at": "2026-09-04T10:03:00Z",
+    "prev_hash": "fb7ddc1af139132bd34174392f34fb8c6b565dadf4eb4be9d73660a6f9b8ddff",
+    "hash": "0ba7609dc0dfaabe210705c3f24c365f894e390169306c2ac5a208c83074d3c1"
+  },
+  {
+    "id": 4,
+    "actor": "system",
+    "action": "review_case.created",
+    "entity_type": "review_case",
+    "entity_id": "60000000-0000-4000-8000-000000000001",
+    "payload": {
+      "kind": "intake_overrun"
+    },
+    "created_at": "2026-09-04T10:04:00Z",
+    "prev_hash": "0ba7609dc0dfaabe210705c3f24c365f894e390169306c2ac5a208c83074d3c1",
+    "hash": "217237a7c2cb63483ee2ee838cccb6692fa797cfd6a60f151884262c856898af"
+  },
+  {
+    "id": 5,
+    "actor": "demo-aicte_admin",
+    "action": "review_case.updated",
+    "entity_type": "review_case",
+    "entity_id": "60000000-0000-4000-8000-000000000004",
+    "payload": {
+      "status": "correction_requested"
+    },
+    "created_at": "2026-09-04T10:05:00Z",
+    "prev_hash": "217237a7c2cb63483ee2ee838cccb6692fa797cfd6a60f151884262c856898af",
+    "hash": "68fc195f4bdb0b454e880e2bcbf067f51b17523af8315926a0b70cd9c8120f04"
+  }
+]

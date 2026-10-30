@@ -1,0 +1,36 @@
+[
+  {
+    "rank": 1,
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "institution_name": "Shadow Institute of Technology",
+    "aicte_code": "1-9999003",
+    "integrity_score": 38.0,
+    "anomaly_score": 0.81,
+    "top_signals": [
+      "INTAKE_OVERRUN",
+      "SHARED_CONTACT_CLUSTER",
+      "BACKDATED_ENTRY",
+      "FUZZY_MATCH_CANDIDATE"
+    ]
+  },
+  {
+    "rank": 2,
+    "institution_id": "10000000-0000-4000-8000-000000000002",
+    "institution_name": "Narmada Valley College of Technology",
+    "aicte_code": "1-9999002",
+    "integrity_score": 84.0,
+    "anomaly_score": 0.34,
+    "top_signals": [
+      "FUZZY_MATCH_CANDIDATE"
+    ]
+  },
+  {
+    "rank": 3,
+    "institution_id": "10000000-0000-4000-8000-000000000001",
+    "institution_name": "Meghdoot Institute of Engineering",
+    "aicte_code": "1-9999001",
+    "integrity_score": 93.0,
+    "anomaly_score": 0.21,
+    "top_signals": []
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "91000000-0000-4000-8000-000000000001",
+    "accessor": "Acme Infotech (demo employer)",
+    "accessor_role": "verifier",
+    "purpose": "Campus hiring background check",
+    "fields": [
+      "apaar_id",
+      "programme",
+      "institution",
+      "status"
+    ],
+    "consent_id": "90000000-0000-4000-8000-000000000001",
+    "accessed_at": "2026-09-11T06:30:00Z"
+  },
+  {
+    "id": "91000000-0000-4000-8000-000000000002",
+    "accessor": "Meghdoot Institute of Engineering",
+    "accessor_role": "institution_admin",
+    "purpose": "Admission record upload",
+    "fields": [
+      "full_name",
+      "dob",
+      "apaar_id"
+    ],
+    "consent_id": null,
+    "accessed_at": "2026-09-02T09:40:00Z"
+  },
+  {
+    "id": "91000000-0000-4000-8000-000000000003",
+    "accessor": "AICTE Regulation Bureau",
+    "accessor_role": "aicte_admin",
+    "purpose": "Intake compliance review",
+    "fields": [
+      "programme",
+      "seat_pool"
+    ],
+    "consent_id": null,
+    "accessed_at": "2026-09-05T07:15:00Z"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "rank": {
+      "title": "Rank",
+      "type": "integer"
+    },
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "institution_name": {
+      "title": "Institution Name",
+      "type": "string"
+    },
+    "aicte_code": {
+      "title": "Aicte Code",
+      "type": "string"
+    },
+    "integrity_score": {
+      "title": "Integrity Score",
+      "type": "number"
+    },
+    "anomaly_score": {
+      "title": "Anomaly Score",
+      "type": "number"
+    },
+    "top_signals": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Top Signals",
+      "type": "array"
+    }
+  },
+  "required": [
+    "rank",
+    "institution_id",
+    "institution_name",
+    "aicte_code",
+    "integrity_score",
+    "anomaly_score",
+    "top_signals"
+  ],
+  "title": "IntegrityRanking",
+  "type": "object"
+}

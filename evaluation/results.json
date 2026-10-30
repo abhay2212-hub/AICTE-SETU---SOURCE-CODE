@@ -1,0 +1,227 @@
+{
+  "blind_match": {
+    "shared_contact_cluster": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "backdated_entry": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "typo_duplicate": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 12
+    },
+    "dup_cross_institution": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    },
+    "intake_overrun": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "birth_year_blind_match": {
+    "shared_contact_cluster": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "backdated_entry": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "typo_duplicate": {
+      "tp": 12,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9231,
+      "recall": 1.0,
+      "f1": 0.96,
+      "support": 12,
+      "note": "birth-year blocking: 1 FP (two Ijaya Aggarwals, different DOB)"
+    },
+    "dup_cross_institution": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    },
+    "intake_overrun": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "plaintext_fuzzy": {
+    "shared_contact_cluster": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "backdated_entry": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "typo_duplicate": {
+      "tp": 12,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9231,
+      "recall": 1.0,
+      "f1": 0.96,
+      "support": 12,
+      "note": "unencrypted plaintext name ratio collision on Eta Banerjee vs Neha Banerjee"
+    },
+    "dup_cross_institution": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    },
+    "intake_overrun": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "engine_reference": {
+    "shared_contact_cluster": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "backdated_entry": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 16
+    },
+    "typo_duplicate": {
+      "tp": 12,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.9231,
+      "recall": 1.0,
+      "f1": 0.96,
+      "support": 12,
+      "note": "birth-year blocking: 1 FP (two Ijaya Aggarwals, different DOB)"
+    },
+    "dup_cross_institution": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 10
+    },
+    "intake_overrun": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    }
+  },
+  "overall": {
+    "blind_match": {
+      "micro_precision": 1.0,
+      "micro_recall": 1.0,
+      "micro_f1": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0
+    },
+    "birth_year_blind_match": {
+      "micro_precision": 0.9828,
+      "micro_recall": 1.0,
+      "micro_f1": 0.9913,
+      "macro_precision": 0.9846,
+      "macro_recall": 1.0,
+      "macro_f1": 0.992
+    },
+    "plaintext_fuzzy": {
+      "micro_precision": 0.9828,
+      "micro_recall": 1.0,
+      "micro_f1": 0.9913,
+      "macro_precision": 0.9846,
+      "macro_recall": 1.0,
+      "macro_f1": 0.992
+    },
+    "engine_reference": {
+      "micro_precision": 0.9828,
+      "micro_recall": 1.0,
+      "micro_f1": 0.9913,
+      "macro_precision": 0.9846,
+      "macro_recall": 1.0,
+      "macro_f1": 0.992
+    }
+  }
+}

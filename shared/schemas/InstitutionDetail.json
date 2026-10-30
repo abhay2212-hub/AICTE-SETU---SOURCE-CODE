@@ -1,0 +1,95 @@
+{
+  "$defs": {
+    "Programme": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "level": {
+          "title": "Level",
+          "type": "string"
+        },
+        "duration_years": {
+          "title": "Duration Years",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "code",
+        "name",
+        "level",
+        "duration_years"
+      ],
+      "title": "Programme",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "aicte_code": {
+      "title": "Aicte Code",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "state": {
+      "title": "State",
+      "type": "string"
+    },
+    "parent_trust": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Trust"
+    },
+    "integrity_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Integrity Score"
+    },
+    "programmes": {
+      "items": {
+        "$ref": "#/$defs/Programme"
+      },
+      "title": "Programmes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "aicte_code",
+    "name",
+    "state",
+    "programmes"
+  ],
+  "title": "InstitutionDetail",
+  "type": "object"
+}

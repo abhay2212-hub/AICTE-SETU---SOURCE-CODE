@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "older_than_days": {
+      "default": 14,
+      "maximum": 365,
+      "minimum": 0,
+      "title": "Older Than Days",
+      "type": "integer"
+    }
+  },
+  "title": "MarkNoResponseRequest",
+  "type": "object"
+}

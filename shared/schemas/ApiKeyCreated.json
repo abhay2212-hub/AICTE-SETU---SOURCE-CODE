@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "key_id": {
+      "title": "Key Id",
+      "type": "string"
+    },
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "api_key": {
+      "title": "Api Key",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "note": {
+      "default": "Shown once. Only a hash is stored.",
+      "title": "Note",
+      "type": "string"
+    }
+  },
+  "required": [
+    "key_id",
+    "institution_id",
+    "api_key",
+    "created_at"
+  ],
+  "title": "ApiKeyCreated",
+  "type": "object"
+}

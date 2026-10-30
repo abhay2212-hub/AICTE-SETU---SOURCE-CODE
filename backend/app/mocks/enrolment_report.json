@@ -1,0 +1,125 @@
+{
+  "programme": {
+    "academic_year": "2026-27",
+    "group_by": "programme",
+    "total": 462,
+    "rows": [
+      {
+        "group": "UG-CSE",
+        "admissions": 309,
+        "opted_out": 5
+      },
+      {
+        "group": "UG-ME",
+        "admissions": 57,
+        "opted_out": 1
+      },
+      {
+        "group": "UG-ECE",
+        "admissions": 52,
+        "opted_out": 2
+      },
+      {
+        "group": "UG-CE",
+        "admissions": 44,
+        "opted_out": 1
+      }
+    ]
+  },
+  "state": {
+    "academic_year": "2026-27",
+    "group_by": "state",
+    "total": 462,
+    "rows": [
+      {
+        "group": "Maharashtra",
+        "admissions": 121,
+        "opted_out": 3
+      },
+      {
+        "group": "Madhya Pradesh",
+        "admissions": 118,
+        "opted_out": 2
+      },
+      {
+        "group": "Uttar Pradesh",
+        "admissions": 96,
+        "opted_out": 1
+      },
+      {
+        "group": "Bihar",
+        "admissions": 54,
+        "opted_out": 1
+      },
+      {
+        "group": "Tamil Nadu",
+        "admissions": 21,
+        "opted_out": 0
+      },
+      {
+        "group": "Karnataka",
+        "admissions": 18,
+        "opted_out": 1
+      },
+      {
+        "group": "Others",
+        "admissions": 34,
+        "opted_out": 1
+      }
+    ]
+  },
+  "category": {
+    "academic_year": "2026-27",
+    "group_by": "category",
+    "total": 462,
+    "rows": [
+      {
+        "group": "general",
+        "admissions": 170,
+        "opted_out": 3
+      },
+      {
+        "group": "ews",
+        "admissions": 46,
+        "opted_out": 2
+      },
+      {
+        "group": "obc",
+        "admissions": 128,
+        "opted_out": 2
+      },
+      {
+        "group": "sc",
+        "admissions": 72,
+        "opted_out": 1
+      },
+      {
+        "group": "st",
+        "admissions": 46,
+        "opted_out": 1
+      }
+    ]
+  },
+  "gender": {
+    "academic_year": "2026-27",
+    "group_by": "gender",
+    "total": 462,
+    "rows": [
+      {
+        "group": "male",
+        "admissions": 268,
+        "opted_out": 5
+      },
+      {
+        "group": "female",
+        "admissions": 192,
+        "opted_out": 4
+      },
+      {
+        "group": "transgender",
+        "admissions": 2,
+        "opted_out": 0
+      }
+    ]
+  }
+}

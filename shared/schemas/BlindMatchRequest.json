@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "BlindMatchStudentInput": {
+      "description": "Input student record for blind match duplicate detection.",
+      "properties": {
+        "student_id": {
+          "title": "Student Id",
+          "type": "string"
+        },
+        "institution_id": {
+          "title": "Institution Id",
+          "type": "string"
+        },
+        "student_name": {
+          "title": "Student Name",
+          "type": "string"
+        },
+        "dob": {
+          "title": "Dob",
+          "type": "string"
+        },
+        "father_name": {
+          "default": "",
+          "title": "Father Name",
+          "type": "string"
+        },
+        "mother_name": {
+          "default": "",
+          "title": "Mother Name",
+          "type": "string"
+        },
+        "apaar_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Apaar Id"
+        }
+      },
+      "required": [
+        "student_id",
+        "institution_id",
+        "student_name",
+        "dob"
+      ],
+      "title": "BlindMatchStudentInput",
+      "type": "object"
+    }
+  },
+  "description": "Request payload for POST /engine/blind-match.",
+  "properties": {
+    "records": {
+      "items": {
+        "$ref": "#/$defs/BlindMatchStudentInput"
+      },
+      "title": "Records",
+      "type": "array"
+    },
+    "threshold": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Threshold"
+    }
+  },
+  "required": [
+    "records"
+  ],
+  "title": "BlindMatchRequest",
+  "type": "object"
+}

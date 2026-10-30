@@ -1,0 +1,243 @@
+/* Owner: Dev D */
+/* Landing page motion. Base styles are the final state; animation runs only when the
+   viewer has not asked for reduced motion. */
+
+@property --ledger-n {
+  syntax: '<integer>';
+  initial-value: 71;
+  inherits: false;
+}
+
+.home-hero-pattern {
+  background-image:
+    radial-gradient(rgb(255 255 255 / 0.09) 1px, transparent 1px),
+    linear-gradient(135deg, #0b1437 0%, #1e1b6b 55%, #3730a3 100%);
+  background-size: 22px 22px, 100% 100%;
+}
+
+/* Seat Ledger card: 8 s loop. */
+.ledger-green,
+.ledger-red {
+  transform-origin: left center;
+}
+.ledger-count {
+  counter-reset: ledger var(--ledger-n);
+}
+.ledger-count::after {
+  content: counter(ledger);
+}
+
+/* Hash chain: every block lit in the final state. */
+.hash-block {
+  background-color: rgb(16 185 129);
+  box-shadow: 0 0 0 3px rgb(16 185 129 / 0.2);
+}
+
+/* Blind Match strip. */
+.bm-row-a,
+.bm-row-b {
+  mix-blend-mode: screen;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ledger-fill {
+    animation: ledger-reset 8s infinite;
+  }
+  .ledger-green {
+    animation: ledger-green 8s infinite cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .ledger-red {
+    animation: ledger-red 8s infinite cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .ledger-pop {
+    animation: ledger-pop 8s infinite;
+  }
+  .ledger-late {
+    animation: ledger-late 8s infinite;
+  }
+  .ledger-count {
+    animation: ledger-count 8s infinite cubic-bezier(0.33, 1, 0.68, 1);
+  }
+
+  .hash-block {
+    animation: hash-pulse 2.4s infinite;
+  }
+
+  .bm-bit {
+    animation: bm-bit 9s infinite;
+  }
+  .bm-row-a {
+    animation: bm-row-a 9s infinite cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .bm-row-b {
+    animation: bm-row-b 9s infinite cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .bm-chip {
+    animation: ledger-pop-bm 9s infinite;
+  }
+}
+
+@keyframes ledger-reset {
+  0%,
+  88% {
+    opacity: 1;
+  }
+  96%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ledger-green {
+  0% {
+    transform: scaleX(0);
+  }
+  30%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes ledger-red {
+  0%,
+  30% {
+    transform: scaleX(0);
+  }
+  44%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes ledger-count {
+  0% {
+    --ledger-n: 0;
+  }
+  30% {
+    --ledger-n: 60;
+  }
+  44%,
+  100% {
+    --ledger-n: 71;
+  }
+}
+@keyframes ledger-late {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  46%,
+  88% {
+    opacity: 1;
+  }
+  96%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ledger-pop {
+  0%,
+  46% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  51% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+  54%,
+  88% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  96%,
+  100% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+@keyframes hash-pulse {
+  0%,
+  40%,
+  100% {
+    background-color: rgb(16 185 129 / 0.35);
+    box-shadow: 0 0 0 0 rgb(16 185 129 / 0);
+    transform: scale(1);
+  }
+  12% {
+    background-color: rgb(16 185 129);
+    box-shadow: 0 0 0 4px rgb(16 185 129 / 0.25);
+    transform: scale(1.12);
+  }
+}
+
+@keyframes bm-bit {
+  0%,
+  8% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  14%,
+  88% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  96%,
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes bm-row-a {
+  0%,
+  28% {
+    opacity: 0;
+    transform: translateX(-56px);
+  }
+  46%,
+  88% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  96%,
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+@keyframes bm-row-b {
+  0%,
+  28% {
+    opacity: 0;
+    transform: translateX(56px);
+  }
+  46%,
+  88% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  96%,
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+@keyframes ledger-pop-bm {
+  0%,
+  50% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+  58%,
+  88% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  96%,
+  100% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "students_encoded": {
+      "title": "Students Encoded",
+      "type": "integer"
+    },
+    "candidates": {
+      "title": "Candidates",
+      "type": "integer"
+    },
+    "matches": {
+      "title": "Matches",
+      "type": "integer"
+    },
+    "cases_created": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Cases Created",
+      "type": "array"
+    }
+  },
+  "required": [
+    "students_encoded",
+    "candidates",
+    "matches",
+    "cases_created"
+  ],
+  "title": "BlindMatchScanResult",
+  "type": "object"
+}

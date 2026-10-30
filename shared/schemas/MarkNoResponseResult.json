@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "marked": {
+      "title": "Marked",
+      "type": "integer"
+    },
+    "older_than_days": {
+      "title": "Older Than Days",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "marked",
+    "older_than_days"
+  ],
+  "title": "MarkNoResponseResult",
+  "type": "object"
+}

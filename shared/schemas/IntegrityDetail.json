@@ -1,0 +1,114 @@
+{
+  "$defs": {
+    "AnomalyExplanation": {
+      "properties": {
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "top_features": {
+          "items": {
+            "$ref": "#/$defs/AnomalyFeature"
+          },
+          "title": "Top Features",
+          "type": "array"
+        }
+      },
+      "required": [
+        "score",
+        "top_features"
+      ],
+      "title": "AnomalyExplanation",
+      "type": "object"
+    },
+    "AnomalyFeature": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "peer_median": {
+          "title": "Peer Median",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "peer_median"
+      ],
+      "title": "AnomalyFeature",
+      "type": "object"
+    },
+    "SignalOut": {
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "error",
+            "warning",
+            "review",
+            "info"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "evidence": {
+          "additionalProperties": true,
+          "title": "Evidence",
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "evidence"
+      ],
+      "title": "SignalOut",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "integrity_score": {
+      "title": "Integrity Score",
+      "type": "number"
+    },
+    "components": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Components",
+      "type": "object"
+    },
+    "signals": {
+      "items": {
+        "$ref": "#/$defs/SignalOut"
+      },
+      "title": "Signals",
+      "type": "array"
+    },
+    "anomaly": {
+      "$ref": "#/$defs/AnomalyExplanation"
+    }
+  },
+  "required": [
+    "institution_id",
+    "integrity_score",
+    "components",
+    "signals",
+    "anomaly"
+  ],
+  "title": "IntegrityDetail",
+  "type": "object"
+}

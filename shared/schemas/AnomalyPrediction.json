@@ -1,0 +1,40 @@
+{
+  "description": "Anomaly prediction result for one institution.",
+  "properties": {
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "score": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Score",
+      "type": "number"
+    },
+    "prediction": {
+      "default": "normal",
+      "title": "Prediction",
+      "type": "string"
+    },
+    "top_features": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Top Features",
+      "type": "array"
+    },
+    "feature_vector": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Feature Vector",
+      "type": "object"
+    }
+  },
+  "required": [
+    "institution_id",
+    "score"
+  ],
+  "title": "AnomalyPrediction",
+  "type": "object"
+}

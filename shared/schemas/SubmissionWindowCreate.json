@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "academic_year": {
+      "examples": [
+        "2026-27"
+      ],
+      "pattern": "^\\d{4}-\\d{2}$",
+      "title": "Academic Year",
+      "type": "string"
+    },
+    "opens_at": {
+      "format": "date-time",
+      "title": "Opens At",
+      "type": "string"
+    },
+    "closes_at": {
+      "format": "date-time",
+      "title": "Closes At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "academic_year",
+    "opens_at",
+    "closes_at"
+  ],
+  "title": "SubmissionWindowCreate",
+  "type": "object"
+}

@@ -1,0 +1,88 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "intake_overrun",
+        "blind_match",
+        "dispute",
+        "signal"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "evidence": {
+      "additionalProperties": true,
+      "title": "Evidence",
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "open",
+        "confirmed",
+        "dismissed",
+        "correction_requested"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "reviewer_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reviewer Note"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "format": "date-time",
+      "title": "Updated At",
+      "type": "string"
+    },
+    "resolved_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Resolved At"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "institution_id",
+    "title",
+    "evidence",
+    "status",
+    "created_at",
+    "updated_at"
+  ],
+  "title": "ReviewCase",
+  "type": "object"
+}

@@ -1,0 +1,54 @@
+{
+  "description": "An integrity signal raised against an institution.",
+  "properties": {
+    "signal_id": {
+      "title": "Signal Id",
+      "type": "string"
+    },
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "signal_name": {
+      "title": "Signal Name",
+      "type": "string"
+    },
+    "severity": {
+      "default": "warning",
+      "enum": [
+        "error",
+        "warning",
+        "review",
+        "info"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "score": {
+      "default": 0.0,
+      "title": "Score",
+      "type": "number"
+    },
+    "evidence": {
+      "additionalProperties": true,
+      "title": "Evidence",
+      "type": "object"
+    },
+    "description": {
+      "default": "",
+      "title": "Description",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "institution_id",
+    "signal_name"
+  ],
+  "title": "Signal",
+  "type": "object"
+}

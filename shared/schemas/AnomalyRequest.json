@@ -1,0 +1,24 @@
+{
+  "additionalProperties": true,
+  "description": "Request payload for POST /engine/anomaly.",
+  "properties": {
+    "institutions": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Institutions",
+      "type": "array"
+    },
+    "features": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Features",
+      "type": "array"
+    }
+  },
+  "title": "AnomalyRequest",
+  "type": "object"
+}

@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-09-20T08:00:00Z",
+  "revoked": [
+    {
+      "credential_id": "92000000-0000-4000-8000-000000000007",
+      "reason": "Student withdrew consent",
+      "revoked_at": "2026-09-20T08:00:00Z"
+    }
+  ]
+}

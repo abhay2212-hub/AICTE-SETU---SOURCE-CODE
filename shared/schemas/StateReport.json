@@ -1,0 +1,180 @@
+{
+  "$defs": {
+    "StateInstitution": {
+      "properties": {
+        "institution_id": {
+          "title": "Institution Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "aicte_code": {
+          "title": "Aicte Code",
+          "type": "string"
+        },
+        "integrity_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Integrity Score"
+        },
+        "open_review_cases": {
+          "title": "Open Review Cases",
+          "type": "integer"
+        },
+        "overrun": {
+          "title": "Overrun",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "institution_id",
+        "name",
+        "aicte_code",
+        "integrity_score",
+        "open_review_cases",
+        "overrun"
+      ],
+      "title": "StateInstitution",
+      "type": "object"
+    },
+    "StateRow": {
+      "properties": {
+        "state": {
+          "title": "State",
+          "type": "string"
+        },
+        "institutions": {
+          "title": "Institutions",
+          "type": "integer"
+        },
+        "active_admissions": {
+          "title": "Active Admissions",
+          "type": "integer"
+        },
+        "approved_seats": {
+          "title": "Approved Seats",
+          "type": "integer"
+        },
+        "utilisation": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Utilisation"
+        },
+        "overrun_programmes": {
+          "title": "Overrun Programmes",
+          "type": "integer"
+        },
+        "open_review_cases": {
+          "title": "Open Review Cases",
+          "type": "integer"
+        },
+        "avg_integrity_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Avg Integrity Score"
+        },
+        "institutions_list": {
+          "items": {
+            "$ref": "#/$defs/StateInstitution"
+          },
+          "title": "Institutions List",
+          "type": "array"
+        }
+      },
+      "required": [
+        "state",
+        "institutions",
+        "active_admissions",
+        "approved_seats",
+        "utilisation",
+        "overrun_programmes",
+        "open_review_cases",
+        "avg_integrity_score",
+        "institutions_list"
+      ],
+      "title": "StateRow",
+      "type": "object"
+    },
+    "StateTotals": {
+      "properties": {
+        "institutions": {
+          "title": "Institutions",
+          "type": "integer"
+        },
+        "active_admissions": {
+          "title": "Active Admissions",
+          "type": "integer"
+        },
+        "approved_seats": {
+          "title": "Approved Seats",
+          "type": "integer"
+        },
+        "overrun_programmes": {
+          "title": "Overrun Programmes",
+          "type": "integer"
+        },
+        "open_review_cases": {
+          "title": "Open Review Cases",
+          "type": "integer"
+        },
+        "states": {
+          "title": "States",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "institutions",
+        "active_admissions",
+        "approved_seats",
+        "overrun_programmes",
+        "open_review_cases",
+        "states"
+      ],
+      "title": "StateTotals",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "academic_year": {
+      "title": "Academic Year",
+      "type": "string"
+    },
+    "totals": {
+      "$ref": "#/$defs/StateTotals"
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/StateRow"
+      },
+      "title": "Rows",
+      "type": "array"
+    }
+  },
+  "required": [
+    "academic_year",
+    "totals",
+    "rows"
+  ],
+  "title": "StateReport",
+  "type": "object"
+}

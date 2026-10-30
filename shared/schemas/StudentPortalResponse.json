@@ -1,0 +1,18 @@
+{
+  "description": "Body of POST /students/me/admissions/{id}/response (channel is always portal).",
+  "properties": {
+    "response": {
+      "enum": [
+        "confirmed",
+        "disputed"
+      ],
+      "title": "Response",
+      "type": "string"
+    }
+  },
+  "required": [
+    "response"
+  ],
+  "title": "StudentPortalResponse",
+  "type": "object"
+}

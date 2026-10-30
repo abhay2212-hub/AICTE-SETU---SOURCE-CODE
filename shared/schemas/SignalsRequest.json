@@ -1,0 +1,57 @@
+{
+  "additionalProperties": true,
+  "description": "Request payload for POST /engine/signals.",
+  "properties": {
+    "institution_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Institution Id"
+    },
+    "admissions": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Admissions",
+      "type": "array"
+    },
+    "records": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Records",
+      "type": "array"
+    },
+    "seat_pools": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Seat Pools",
+      "type": "array"
+    },
+    "historical_stats": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Historical Stats",
+      "type": "array"
+    },
+    "rules_config": {
+      "additionalProperties": true,
+      "title": "Rules Config",
+      "type": "object"
+    }
+  },
+  "title": "SignalsRequest",
+  "type": "object"
+}

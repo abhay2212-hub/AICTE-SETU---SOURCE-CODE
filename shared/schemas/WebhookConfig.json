@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "webhook_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Webhook Url"
+    },
+    "secret": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "HMAC-SHA256 signing secret for X-Signature. Shown once.",
+      "title": "Secret"
+    },
+    "note": {
+      "default": "The secret is shown once; setting the URL again rotates it.",
+      "title": "Note",
+      "type": "string"
+    }
+  },
+  "required": [
+    "institution_id"
+  ],
+  "title": "WebhookConfig",
+  "type": "object"
+}

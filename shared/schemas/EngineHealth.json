@@ -1,0 +1,24 @@
+{
+  "description": "Engine health status.",
+  "properties": {
+    "status": {
+      "default": "ok",
+      "title": "Status",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "engine_ok": {
+      "default": true,
+      "title": "Engine Ok",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "version"
+  ],
+  "title": "EngineHealth",
+  "type": "object"
+}

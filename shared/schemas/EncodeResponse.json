@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "demo_only": {
+      "const": true,
+      "default": true,
+      "title": "Demo Only",
+      "type": "boolean"
+    },
+    "bits": {
+      "title": "Bits",
+      "type": "integer"
+    },
+    "k": {
+      "title": "K",
+      "type": "integer"
+    },
+    "set_bits": {
+      "title": "Set Bits",
+      "type": "integer"
+    },
+    "encoding_b64": {
+      "title": "Encoding B64",
+      "type": "string"
+    }
+  },
+  "required": [
+    "bits",
+    "k",
+    "set_bits",
+    "encoding_b64"
+  ],
+  "title": "EncodeResponse",
+  "type": "object"
+}

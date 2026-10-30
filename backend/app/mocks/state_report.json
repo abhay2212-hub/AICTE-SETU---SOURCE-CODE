@@ -1,0 +1,75 @@
+{
+  "2026-27": {
+    "academic_year": "2026-27",
+    "totals": {
+      "institutions": 3,
+      "active_admissions": 462,
+      "approved_seats": 480,
+      "overrun_programmes": 1,
+      "open_review_cases": 3,
+      "states": 3
+    },
+    "rows": [
+      {
+        "state": "Madhya Pradesh",
+        "institutions": 1,
+        "active_admissions": 172,
+        "approved_seats": 180,
+        "utilisation": 0.9556,
+        "overrun_programmes": 0,
+        "open_review_cases": 0,
+        "avg_integrity_score": 84.0,
+        "institutions_list": [
+          {
+            "institution_id": "10000000-0000-4000-8000-000000000002",
+            "name": "Narmada Valley College of Technology",
+            "aicte_code": "1-9999002",
+            "integrity_score": 84.0,
+            "open_review_cases": 0,
+            "overrun": false
+          }
+        ]
+      },
+      {
+        "state": "Maharashtra",
+        "institutions": 1,
+        "active_admissions": 175,
+        "approved_seats": 180,
+        "utilisation": 0.9722,
+        "overrun_programmes": 0,
+        "open_review_cases": 0,
+        "avg_integrity_score": 93.0,
+        "institutions_list": [
+          {
+            "institution_id": "10000000-0000-4000-8000-000000000001",
+            "name": "Meghdoot Institute of Engineering",
+            "aicte_code": "1-9999001",
+            "integrity_score": 93.0,
+            "open_review_cases": 0,
+            "overrun": false
+          }
+        ]
+      },
+      {
+        "state": "Uttar Pradesh",
+        "institutions": 1,
+        "active_admissions": 115,
+        "approved_seats": 120,
+        "utilisation": 0.9583,
+        "overrun_programmes": 1,
+        "open_review_cases": 3,
+        "avg_integrity_score": 38.0,
+        "institutions_list": [
+          {
+            "institution_id": "10000000-0000-4000-8000-000000000003",
+            "name": "Shadow Institute of Technology",
+            "aicte_code": "1-9999003",
+            "integrity_score": 38.0,
+            "open_review_cases": 3,
+            "overrun": true
+          }
+        ]
+      }
+    ]
+  }
+}

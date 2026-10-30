@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "admission_id": {
+      "title": "Admission Id",
+      "type": "string"
+    },
+    "response": {
+      "enum": [
+        "confirmed",
+        "disputed"
+      ],
+      "title": "Response",
+      "type": "string"
+    },
+    "channel": {
+      "enum": [
+        "telegram",
+        "portal"
+      ],
+      "title": "Channel",
+      "type": "string"
+    }
+  },
+  "required": [
+    "admission_id",
+    "response",
+    "channel"
+  ],
+  "title": "StudentResponseRequest",
+  "type": "object"
+}

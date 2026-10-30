@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "code": {
+      "title": "Code",
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "error",
+        "warning",
+        "review",
+        "info"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "evidence": {
+      "additionalProperties": true,
+      "title": "Evidence",
+      "type": "object"
+    }
+  },
+  "required": [
+    "code",
+    "severity",
+    "evidence"
+  ],
+  "title": "SignalOut",
+  "type": "object"
+}

@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "value": {
+      "title": "Value",
+      "type": "number"
+    },
+    "peer_median": {
+      "title": "Peer Median",
+      "type": "number"
+    }
+  },
+  "required": [
+    "name",
+    "value",
+    "peer_median"
+  ],
+  "title": "AnomalyFeature",
+  "type": "object"
+}

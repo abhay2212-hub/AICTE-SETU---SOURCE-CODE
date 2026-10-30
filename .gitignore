@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+
+# Generated data and tooling output
+datagen/out/
+graphify-out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# AI tool rule files: kept local, shared with the team outside git
+/AGENTS.md
+/CLAUDE.md
+/GEMINI.md
+/docs/setup-prompt.md
+/.claude/
+/.agent/
+/.github/copilot-instructions.md
+/docs/prompts/
+/backend/scripts/.tamper_backup.json
+
+/.agents/

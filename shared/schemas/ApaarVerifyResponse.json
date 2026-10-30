@@ -1,0 +1,55 @@
+{
+  "properties": {
+    "simulated": {
+      "const": true,
+      "default": true,
+      "title": "Simulated",
+      "type": "boolean"
+    },
+    "source": {
+      "default": "SIMULATED APAAR registry",
+      "title": "Source",
+      "type": "string"
+    },
+    "apaar_id_masked": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Apaar Id Masked"
+    },
+    "result": {
+      "enum": [
+        "found",
+        "not_found",
+        "invalid_format",
+        "opted_out",
+        "missing"
+      ],
+      "title": "Result",
+      "type": "string"
+    },
+    "rule_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Rule Code"
+    }
+  },
+  "required": [
+    "apaar_id_masked",
+    "result"
+  ],
+  "title": "ApaarVerifyResponse",
+  "type": "object"
+}

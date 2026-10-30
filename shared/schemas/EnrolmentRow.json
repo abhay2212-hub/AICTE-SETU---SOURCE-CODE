@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "group": {
+      "title": "Group",
+      "type": "string"
+    },
+    "admissions": {
+      "title": "Admissions",
+      "type": "integer"
+    },
+    "opted_out": {
+      "title": "Opted Out",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "group",
+    "admissions",
+    "opted_out"
+  ],
+  "title": "EnrolmentRow",
+  "type": "object"
+}

@@ -1,0 +1,62 @@
+{
+  "$defs": {
+    "EnrolmentRow": {
+      "properties": {
+        "group": {
+          "title": "Group",
+          "type": "string"
+        },
+        "admissions": {
+          "title": "Admissions",
+          "type": "integer"
+        },
+        "opted_out": {
+          "title": "Opted Out",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "group",
+        "admissions",
+        "opted_out"
+      ],
+      "title": "EnrolmentRow",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "academic_year": {
+      "title": "Academic Year",
+      "type": "string"
+    },
+    "group_by": {
+      "enum": [
+        "state",
+        "programme",
+        "category",
+        "gender"
+      ],
+      "title": "Group By",
+      "type": "string"
+    },
+    "total": {
+      "title": "Total",
+      "type": "integer"
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/EnrolmentRow"
+      },
+      "title": "Rows",
+      "type": "array"
+    }
+  },
+  "required": [
+    "academic_year",
+    "group_by",
+    "total",
+    "rows"
+  ],
+  "title": "EnrolmentReport",
+  "type": "object"
+}

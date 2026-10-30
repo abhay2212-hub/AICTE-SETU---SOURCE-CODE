@@ -1,0 +1,259 @@
+{
+  "$defs": {
+    "Admission": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "student_id": {
+          "title": "Student Id",
+          "type": "string"
+        },
+        "student_name": {
+          "title": "Student Name",
+          "type": "string"
+        },
+        "apaar_id_masked": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Masked as XXXX-XXXX-1234",
+          "title": "Apaar Id Masked"
+        },
+        "provisional_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provisional Id"
+        },
+        "apaar_opt_out": {
+          "default": false,
+          "title": "Apaar Opt Out",
+          "type": "boolean"
+        },
+        "institution_id": {
+          "title": "Institution Id",
+          "type": "string"
+        },
+        "programme_id": {
+          "title": "Programme Id",
+          "type": "string"
+        },
+        "programme_code": {
+          "title": "Programme Code",
+          "type": "string"
+        },
+        "academic_year": {
+          "title": "Academic Year",
+          "type": "string"
+        },
+        "seat_pool": {
+          "enum": [
+            "regular",
+            "tfw",
+            "fn_oci_pio",
+            "nri"
+          ],
+          "title": "Seat Pool",
+          "type": "string"
+        },
+        "admission_mode": {
+          "enum": [
+            "cap",
+            "management",
+            "lateral",
+            "spot"
+          ],
+          "title": "Admission Mode",
+          "type": "string"
+        },
+        "admission_date": {
+          "format": "date",
+          "title": "Admission Date",
+          "type": "string"
+        },
+        "qualifying_exam_pct": {
+          "title": "Qualifying Exam Pct",
+          "type": "number"
+        },
+        "status": {
+          "enum": [
+            "submitted",
+            "student_confirmed",
+            "student_disputed",
+            "no_response",
+            "withdrawn"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "batch_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Batch Id"
+        }
+      },
+      "required": [
+        "id",
+        "student_id",
+        "student_name",
+        "institution_id",
+        "programme_id",
+        "programme_code",
+        "academic_year",
+        "seat_pool",
+        "admission_mode",
+        "admission_date",
+        "qualifying_exam_pct",
+        "status"
+      ],
+      "title": "Admission",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "admission_id": {
+      "title": "Admission Id",
+      "type": "string"
+    },
+    "field": {
+      "title": "Field",
+      "type": "string"
+    },
+    "old_value": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Old Value"
+    },
+    "new_value": {
+      "title": "New Value",
+      "type": "string"
+    },
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "requested_by": {
+      "title": "Requested By",
+      "type": "string"
+    },
+    "decided_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Decided By"
+    },
+    "decision_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Decision Note"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "decided_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Decided At"
+    },
+    "institution_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Institution Id"
+    },
+    "admission": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Admission"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The admission it changes (APAAR masked); set by GET /edit-requests"
+    }
+  },
+  "required": [
+    "id",
+    "admission_id",
+    "field",
+    "new_value",
+    "reason",
+    "status",
+    "requested_by",
+    "created_at"
+  ],
+  "title": "EditRequest",
+  "type": "object"
+}

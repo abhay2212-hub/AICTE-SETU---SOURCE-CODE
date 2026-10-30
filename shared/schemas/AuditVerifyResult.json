@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "ok": {
+      "title": "Ok",
+      "type": "boolean"
+    },
+    "first_broken_index": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "First Broken Index"
+    },
+    "checked": {
+      "title": "Checked",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "ok",
+    "first_broken_index",
+    "checked"
+  ],
+  "title": "AuditVerifyResult",
+  "type": "object"
+}

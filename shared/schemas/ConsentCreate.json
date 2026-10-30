@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "verifier_id": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Verifier Id",
+      "type": "string"
+    },
+    "verifier_name": {
+      "anyOf": [
+        {
+          "maxLength": 200,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Verifier Name"
+    },
+    "purpose": {
+      "description": "'apaar_sharing' is the APAAR sharing opt-in",
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Purpose",
+      "type": "string"
+    },
+    "fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Fields",
+      "type": "array"
+    },
+    "expires_in_days": {
+      "default": 30,
+      "maximum": 365,
+      "minimum": 1,
+      "title": "Expires In Days",
+      "type": "integer"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "enum": [
+            "grant",
+            "withdraw"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Default grant",
+      "title": "Action"
+    }
+  },
+  "required": [
+    "verifier_id",
+    "purpose"
+  ],
+  "title": "ConsentCreate",
+  "type": "object"
+}

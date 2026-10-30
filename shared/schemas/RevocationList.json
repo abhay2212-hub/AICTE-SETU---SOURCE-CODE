@@ -1,0 +1,48 @@
+{
+  "$defs": {
+    "Revocation": {
+      "properties": {
+        "credential_id": {
+          "title": "Credential Id",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "revoked_at": {
+          "format": "date-time",
+          "title": "Revoked At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "credential_id",
+        "reason",
+        "revoked_at"
+      ],
+      "title": "Revocation",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "updated_at": {
+      "format": "date-time",
+      "title": "Updated At",
+      "type": "string"
+    },
+    "revoked": {
+      "items": {
+        "$ref": "#/$defs/Revocation"
+      },
+      "title": "Revoked",
+      "type": "array"
+    }
+  },
+  "required": [
+    "updated_at",
+    "revoked"
+  ],
+  "title": "RevocationList",
+  "type": "object"
+}

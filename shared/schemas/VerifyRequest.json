@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "qr_text": {
+      "maxLength": 8192,
+      "minLength": 1,
+      "title": "Qr Text",
+      "type": "string"
+    }
+  },
+  "required": [
+    "qr_text"
+  ],
+  "title": "VerifyRequest",
+  "type": "object"
+}

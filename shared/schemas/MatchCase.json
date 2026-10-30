@@ -1,0 +1,70 @@
+{
+  "description": "Represents a potential duplicate between institutions.",
+  "properties": {
+    "case_id": {
+      "title": "Case Id",
+      "type": "string"
+    },
+    "institution_a": {
+      "title": "Institution A",
+      "type": "string"
+    },
+    "institution_b": {
+      "title": "Institution B",
+      "type": "string"
+    },
+    "student_a_id": {
+      "title": "Student A Id",
+      "type": "string"
+    },
+    "student_b_id": {
+      "title": "Student B Id",
+      "type": "string"
+    },
+    "similarity_score": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Similarity Score",
+      "type": "number"
+    },
+    "confidence": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "matched_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Matched Fields",
+      "type": "array"
+    },
+    "status": {
+      "default": "open",
+      "enum": [
+        "open",
+        "confirmed",
+        "dismissed",
+        "correction_requested"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "institution_a",
+    "institution_b",
+    "student_a_id",
+    "student_b_id",
+    "similarity_score",
+    "confidence"
+  ],
+  "title": "MatchCase",
+  "type": "object"
+}

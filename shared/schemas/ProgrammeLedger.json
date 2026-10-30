@@ -1,0 +1,92 @@
+{
+  "$defs": {
+    "PoolLedger": {
+      "properties": {
+        "pool": {
+          "enum": [
+            "regular",
+            "tfw",
+            "fn_oci_pio",
+            "nri"
+          ],
+          "title": "Pool",
+          "type": "string"
+        },
+        "approved_seats": {
+          "title": "Approved Seats",
+          "type": "integer"
+        },
+        "admitted": {
+          "title": "Admitted",
+          "type": "integer"
+        },
+        "available": {
+          "title": "Available",
+          "type": "integer"
+        },
+        "overrun": {
+          "title": "Overrun",
+          "type": "integer"
+        },
+        "rule_version": {
+          "title": "Rule Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pool",
+        "approved_seats",
+        "admitted",
+        "available",
+        "overrun",
+        "rule_version"
+      ],
+      "title": "PoolLedger",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "programme_id": {
+      "title": "Programme Id",
+      "type": "string"
+    },
+    "programme_code": {
+      "title": "Programme Code",
+      "type": "string"
+    },
+    "programme_name": {
+      "title": "Programme Name",
+      "type": "string"
+    },
+    "approved_total": {
+      "title": "Approved Total",
+      "type": "integer"
+    },
+    "admitted_total": {
+      "title": "Admitted Total",
+      "type": "integer"
+    },
+    "overrun": {
+      "title": "Overrun",
+      "type": "integer"
+    },
+    "pools": {
+      "items": {
+        "$ref": "#/$defs/PoolLedger"
+      },
+      "title": "Pools",
+      "type": "array"
+    }
+  },
+  "required": [
+    "programme_id",
+    "programme_code",
+    "programme_name",
+    "approved_total",
+    "admitted_total",
+    "overrun",
+    "pools"
+  ],
+  "title": "ProgrammeLedger",
+  "type": "object"
+}

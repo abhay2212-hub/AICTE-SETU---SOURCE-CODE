@@ -1,0 +1,45 @@
+{
+  "properties": {
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "aicte_code": {
+      "title": "Aicte Code",
+      "type": "string"
+    },
+    "integrity_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Integrity Score"
+    },
+    "open_review_cases": {
+      "title": "Open Review Cases",
+      "type": "integer"
+    },
+    "overrun": {
+      "title": "Overrun",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "institution_id",
+    "name",
+    "aicte_code",
+    "integrity_score",
+    "open_review_cases",
+    "overrun"
+  ],
+  "title": "StateInstitution",
+  "type": "object"
+}

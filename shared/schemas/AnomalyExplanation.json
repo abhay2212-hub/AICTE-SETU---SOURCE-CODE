@@ -1,0 +1,46 @@
+{
+  "$defs": {
+    "AnomalyFeature": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "peer_median": {
+          "title": "Peer Median",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "peer_median"
+      ],
+      "title": "AnomalyFeature",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "score": {
+      "title": "Score",
+      "type": "number"
+    },
+    "top_features": {
+      "items": {
+        "$ref": "#/$defs/AnomalyFeature"
+      },
+      "title": "Top Features",
+      "type": "array"
+    }
+  },
+  "required": [
+    "score",
+    "top_features"
+  ],
+  "title": "AnomalyExplanation",
+  "type": "object"
+}

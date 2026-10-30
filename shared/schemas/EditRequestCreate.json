@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "field": {
+      "description": "admission_date, admission_mode, qualifying_exam_pct, student_name, dob, or withdrawal (new_value 'withdrawn'; approving it withdraws the admission)",
+      "title": "Field",
+      "type": "string"
+    },
+    "new_value": {
+      "title": "New Value",
+      "type": "string"
+    },
+    "reason": {
+      "minLength": 1,
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "field",
+    "new_value",
+    "reason"
+  ],
+  "title": "EditRequestCreate",
+  "type": "object"
+}

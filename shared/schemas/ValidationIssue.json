@@ -1,0 +1,106 @@
+{
+  "$defs": {
+    "RuleCode": {
+      "enum": [
+        "REQUIRED_FIELD_MISSING",
+        "APAAR_MISSING",
+        "APAAR_FORMAT",
+        "APAAR_OPTED_OUT",
+        "DUP_IN_BATCH",
+        "DUP_CROSS_INSTITUTION",
+        "FUZZY_MATCH_CANDIDATE",
+        "PROGRAMME_UNKNOWN",
+        "POOL_UNKNOWN",
+        "DATE_INVALID",
+        "ADMISSION_AFTER_CUTOFF",
+        "BACKDATED_ENTRY",
+        "FN_WITHOUT_NATIONALITY",
+        "OCI_INCONSISTENT",
+        "NRI_POOL_MISMATCH",
+        "AGE_IMPLAUSIBLE",
+        "QUALIFYING_BELOW_NORM",
+        "INTAKE_OVERRUN",
+        "SHARED_CONTACT_CLUSTER"
+      ],
+      "title": "RuleCode",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "integer"
+    },
+    "batch_id": {
+      "title": "Batch Id",
+      "type": "string"
+    },
+    "row_number": {
+      "title": "Row Number",
+      "type": "integer"
+    },
+    "rule_code": {
+      "$ref": "#/$defs/RuleCode"
+    },
+    "severity": {
+      "enum": [
+        "error",
+        "warning",
+        "review",
+        "info"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "details": {
+      "additionalProperties": true,
+      "default": {},
+      "title": "Details",
+      "type": "object"
+    },
+    "resolved": {
+      "default": false,
+      "title": "Resolved",
+      "type": "boolean"
+    },
+    "resolution_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Resolution Note"
+    },
+    "resolved_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Resolved At"
+    }
+  },
+  "required": [
+    "id",
+    "batch_id",
+    "row_number",
+    "rule_code",
+    "severity",
+    "message"
+  ],
+  "title": "ValidationIssue",
+  "type": "object"
+}

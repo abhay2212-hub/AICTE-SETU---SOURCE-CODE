@@ -1,0 +1,71 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "full_name": {
+      "title": "Full Name",
+      "type": "string"
+    },
+    "apaar_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Masked as XXXX-XXXX-1234; never the full ID",
+      "title": "Apaar Id"
+    },
+    "apaar_id_masked": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Apaar Id Masked"
+    },
+    "provisional_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Provisional Id"
+    },
+    "opted_out": {
+      "title": "Opted Out",
+      "type": "boolean"
+    },
+    "dob": {
+      "format": "date",
+      "title": "Dob",
+      "type": "string"
+    },
+    "telegram_linked": {
+      "title": "Telegram Linked",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "full_name",
+    "apaar_id",
+    "opted_out",
+    "dob",
+    "telegram_linked"
+  ],
+  "title": "StudentProfile",
+  "type": "object"
+}

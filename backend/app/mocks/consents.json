@@ -1,0 +1,31 @@
+[
+  {
+    "id": "90000000-0000-4000-8000-000000000001",
+    "verifier_id": "ver-acme-infotech",
+    "verifier_name": "Acme Infotech (demo employer)",
+    "purpose": "Campus hiring background check",
+    "fields": [
+      "apaar_id",
+      "programme",
+      "institution",
+      "status"
+    ],
+    "granted_at": "2026-09-10T08:00:00Z",
+    "expires_at": "2026-10-10T08:00:00Z",
+    "revoked_at": null
+  },
+  {
+    "id": "90000000-0000-4000-8000-000000000002",
+    "verifier_id": "ver-scholarship-cell",
+    "verifier_name": "Merit Scholarship Cell (demo)",
+    "purpose": "Scholarship eligibility",
+    "fields": [
+      "programme",
+      "institution",
+      "academic_year"
+    ],
+    "granted_at": "2026-09-01T08:00:00Z",
+    "expires_at": "2026-12-01T08:00:00Z",
+    "revoked_at": "2026-09-20T08:00:00Z"
+  }
+]

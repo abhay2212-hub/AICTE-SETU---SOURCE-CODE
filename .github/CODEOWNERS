@@ -1,0 +1,24 @@
+# Code owners: review requests go to these people automatically.
+*                                       @Soumya-Vinod
+/shared/                                @Soumya-Vinod @chinmay161
+/backend/                               @Soumya-Vinod
+/backend/app/routers/integrity.py       @chinmay161
+/backend/app/routers/blind_match.py     @chinmay161
+/backend/app/routers/engine.py          @chinmay161
+/backend/app/routers/reports.py         @saachijo14
+/backend/app/routers/certificates.py    @saachijo14
+/supabase/                              @Soumya-Vinod
+/engine/                                @chinmay161
+/datagen/                               @saachijo14
+/reports/                               @saachijo14
+/bot/                                   @Soumya-Vinod
+/frontend/                              @annieoverthere
+/frontend/src/pages/student/            @bhumit1204
+/frontend/src/pages/verifier/           @bhumit1204
+/frontend/src/lib/credential-verify.ts  @chinmay161
+/deck/                                  @bhumit1204
+
+# Reassigned
+/frontend/src/pages/home/ @Soumya-Vinod
+/backend/app/routers/certificates.py @Soumya-Vinod
+/backend/app/services/certificates.py @Soumya-Vinod

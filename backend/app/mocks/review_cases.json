@@ -1,0 +1,71 @@
+[
+  {
+    "id": "60000000-0000-4000-8000-000000000001",
+    "kind": "intake_overrun",
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "title": "UG-CSE intake overrun: 71 admitted against 60 approved",
+    "evidence": {
+      "programme_code": "UG-CSE",
+      "academic_year": "2026-27",
+      "approved_total": 60,
+      "admitted_total": 71,
+      "overrun": 11,
+      "pool": "regular",
+      "batch_id": "30000000-0000-4000-8000-000000000001"
+    },
+    "status": "open",
+    "reviewer_note": null,
+    "created_at": "2026-09-02T10:15:01Z",
+    "updated_at": "2026-09-02T10:15:01Z",
+    "resolved_at": null
+  },
+  {
+    "id": "60000000-0000-4000-8000-000000000002",
+    "kind": "blind_match",
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "title": "Probable duplicate identity across Shadow and Narmada Valley",
+    "evidence": {
+      "blind_match_case_id": "80000000-0000-4000-8000-000000000001",
+      "dice": 0.93,
+      "other_institution_id": "10000000-0000-4000-8000-000000000002"
+    },
+    "status": "open",
+    "reviewer_note": null,
+    "created_at": "2026-09-02T10:20:00Z",
+    "updated_at": "2026-09-02T10:20:00Z",
+    "resolved_at": null
+  },
+  {
+    "id": "60000000-0000-4000-8000-000000000003",
+    "kind": "dispute",
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "title": "Student disputes admission record",
+    "evidence": {
+      "admission_id": "50000000-0000-4000-8000-000000000004",
+      "student_id": "40000000-0000-4000-8000-000000000004",
+      "channel": "telegram",
+      "statement": "I never took admission at this institute."
+    },
+    "status": "open",
+    "reviewer_note": null,
+    "created_at": "2026-09-04T12:30:00Z",
+    "updated_at": "2026-09-04T12:30:00Z",
+    "resolved_at": null
+  },
+  {
+    "id": "60000000-0000-4000-8000-000000000004",
+    "kind": "signal",
+    "institution_id": "10000000-0000-4000-8000-000000000003",
+    "title": "Shared contact cluster of 9 students",
+    "evidence": {
+      "rule_code": "SHARED_CONTACT_CLUSTER",
+      "cluster_size": 9,
+      "batch_id": "30000000-0000-4000-8000-000000000001"
+    },
+    "status": "correction_requested",
+    "reviewer_note": "Institution asked to supply individual contact details.",
+    "created_at": "2026-09-02T10:15:02Z",
+    "updated_at": "2026-09-03T09:00:00Z",
+    "resolved_at": null
+  }
+]

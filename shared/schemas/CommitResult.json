@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "batch_id": {
+      "title": "Batch Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "uploaded",
+        "mapped",
+        "validated",
+        "committed",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "rows_committed": {
+      "title": "Rows Committed",
+      "type": "integer"
+    },
+    "rows_rejected": {
+      "title": "Rows Rejected",
+      "type": "integer"
+    },
+    "rows_skipped_existing": {
+      "default": 0,
+      "title": "Rows Skipped Existing",
+      "type": "integer"
+    },
+    "review_cases_created": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Review Cases Created",
+      "type": "array"
+    },
+    "parent_batch_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Set on a correction commit: the batch whose rejected rows it fixes",
+      "title": "Parent Batch Id"
+    },
+    "rows_not_matched": {
+      "default": 0,
+      "description": "Correction rows that matched no rejected row of the parent batch",
+      "title": "Rows Not Matched",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "batch_id",
+    "status",
+    "rows_committed",
+    "rows_rejected",
+    "review_cases_created"
+  ],
+  "title": "CommitResult",
+  "type": "object"
+}

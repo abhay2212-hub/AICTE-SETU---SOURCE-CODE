@@ -1,0 +1,24 @@
+{
+  "properties": {
+    "status": {
+      "enum": [
+        "confirmed",
+        "dismissed",
+        "correction_requested"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "note": {
+      "minLength": 1,
+      "title": "Note",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "note"
+  ],
+  "title": "ResolveRequest",
+  "type": "object"
+}

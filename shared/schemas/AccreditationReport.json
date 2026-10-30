@@ -1,0 +1,95 @@
+{
+  "$defs": {
+    "AccreditationProgramme": {
+      "properties": {
+        "programme_code": {
+          "title": "Programme Code",
+          "type": "string"
+        },
+        "approved_total": {
+          "title": "Approved Total",
+          "type": "integer"
+        },
+        "admitted_total": {
+          "title": "Admitted Total",
+          "type": "integer"
+        },
+        "overrun": {
+          "title": "Overrun",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "programme_code",
+        "approved_total",
+        "admitted_total",
+        "overrun"
+      ],
+      "title": "AccreditationProgramme",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "institution_id": {
+      "title": "Institution Id",
+      "type": "string"
+    },
+    "institution_name": {
+      "title": "Institution Name",
+      "type": "string"
+    },
+    "academic_year": {
+      "title": "Academic Year",
+      "type": "string"
+    },
+    "integrity_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Integrity Score"
+    },
+    "integrity_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Integrity Note"
+    },
+    "apaar_coverage_pct": {
+      "title": "Apaar Coverage Pct",
+      "type": "number"
+    },
+    "open_review_cases": {
+      "title": "Open Review Cases",
+      "type": "integer"
+    },
+    "programmes": {
+      "items": {
+        "$ref": "#/$defs/AccreditationProgramme"
+      },
+      "title": "Programmes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "institution_id",
+    "institution_name",
+    "academic_year",
+    "integrity_score",
+    "apaar_coverage_pct",
+    "open_review_cases",
+    "programmes"
+  ],
+  "title": "AccreditationReport",
+  "type": "object"
+}

@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "accessor": {
+      "title": "Accessor",
+      "type": "string"
+    },
+    "accessor_role": {
+      "title": "Accessor Role",
+      "type": "string"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "type": "string"
+    },
+    "fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Fields",
+      "type": "array"
+    },
+    "consent_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Consent Id"
+    },
+    "accessed_at": {
+      "format": "date-time",
+      "title": "Accessed At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "accessor",
+    "accessor_role",
+    "purpose",
+    "fields",
+    "consent_id",
+    "accessed_at"
+  ],
+  "title": "AccessLogEntry",
+  "type": "object"
+}

@@ -1,0 +1,52 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "aicte_code": {
+      "title": "Aicte Code",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "state": {
+      "title": "State",
+      "type": "string"
+    },
+    "parent_trust": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Trust"
+    },
+    "integrity_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Integrity Score"
+    }
+  },
+  "required": [
+    "id",
+    "aicte_code",
+    "name",
+    "state"
+  ],
+  "title": "Institution",
+  "type": "object"
+}

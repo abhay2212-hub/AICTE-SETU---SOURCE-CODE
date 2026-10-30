@@ -1,0 +1,16 @@
+{
+  "id": "30000000-0000-4000-8000-000000000001",
+  "institution_id": "10000000-0000-4000-8000-000000000003",
+  "uploaded_by": "demo-institution_admin",
+  "file_name": "shadow-admissions-2026-27.csv",
+  "file_hash": "23bc0b150449d5f7748a3886f63d768e12b728bb10509de3048c8d2b06b1a748",
+  "status": "validated",
+  "counts": {
+    "rows_total": 74,
+    "errors": 4,
+    "warnings": 1,
+    "review": 5,
+    "info": 1
+  },
+  "created_at": "2026-09-02T09:40:00Z"
+}

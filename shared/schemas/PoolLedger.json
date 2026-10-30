@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "pool": {
+      "enum": [
+        "regular",
+        "tfw",
+        "fn_oci_pio",
+        "nri"
+      ],
+      "title": "Pool",
+      "type": "string"
+    },
+    "approved_seats": {
+      "title": "Approved Seats",
+      "type": "integer"
+    },
+    "admitted": {
+      "title": "Admitted",
+      "type": "integer"
+    },
+    "available": {
+      "title": "Available",
+      "type": "integer"
+    },
+    "overrun": {
+      "title": "Overrun",
+      "type": "integer"
+    },
+    "rule_version": {
+      "title": "Rule Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "pool",
+    "approved_seats",
+    "admitted",
+    "available",
+    "overrun",
+    "rule_version"
+  ],
+  "title": "PoolLedger",
+  "type": "object"
+}

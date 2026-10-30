@@ -1,0 +1,7 @@
+#!/bin/sh
+# Rejects commit messages that contain AI attribution lines.
+if grep -Eiq '^co-authored-by:|^claude-session:|generated with .*claude' "$1"; then
+  echo "Commit blocked: AI attribution lines are not allowed in this repo." >&2
+  exit 1
+fi
+exit 0

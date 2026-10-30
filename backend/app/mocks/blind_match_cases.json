@@ -1,0 +1,34 @@
+[
+  {
+    "id": "80000000-0000-4000-8000-000000000001",
+    "record_a": "rec-3-0026",
+    "record_b": "rec-2-0112",
+    "institution_a_id": "10000000-0000-4000-8000-000000000003",
+    "institution_b_id": "10000000-0000-4000-8000-000000000002",
+    "dice": 0.93,
+    "fields_compared": [
+      "full_name",
+      "dob",
+      "guardian_name",
+      "domicile_state"
+    ],
+    "status": "open",
+    "review_case_id": "60000000-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "80000000-0000-4000-8000-000000000002",
+    "record_a": "rec-1-0048",
+    "record_b": "rec-3-0059",
+    "institution_a_id": "10000000-0000-4000-8000-000000000001",
+    "institution_b_id": "10000000-0000-4000-8000-000000000003",
+    "dice": 0.87,
+    "fields_compared": [
+      "full_name",
+      "dob",
+      "guardian_name",
+      "domicile_state"
+    ],
+    "status": "dismissed",
+    "review_case_id": null
+  }
+]

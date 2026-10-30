@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "ok": {
+      "title": "Ok",
+      "type": "boolean"
+    },
+    "handled": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Handled"
+    }
+  },
+  "required": [
+    "ok"
+  ],
+  "title": "WebhookAck",
+  "type": "object"
+}

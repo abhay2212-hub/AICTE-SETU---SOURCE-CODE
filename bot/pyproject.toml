@@ -1,0 +1,26 @@
+[project]
+name = "apaar-integrity-bot"
+version = "0.1.0"
+description = "Telegram bot for APAAR Integrity Platform student confirmations."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.4",
+    "python-telegram-bot>=22.8",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

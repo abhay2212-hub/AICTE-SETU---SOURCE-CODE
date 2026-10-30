@@ -1,0 +1,58 @@
+{
+  "properties": {
+    "status": {
+      "title": "Status",
+      "type": "string"
+    },
+    "mock_mode": {
+      "title": "Mock Mode",
+      "type": "boolean"
+    },
+    "engine_import_ok": {
+      "title": "Engine Import Ok",
+      "type": "boolean"
+    },
+    "engine_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Engine Version"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "db": {
+      "default": "unconfigured",
+      "enum": [
+        "ok",
+        "unconfigured",
+        "error"
+      ],
+      "title": "Db",
+      "type": "string"
+    },
+    "real_domains": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Real Domains",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "mock_mode",
+    "engine_import_ok",
+    "version"
+  ],
+  "title": "Health",
+  "type": "object"
+}
